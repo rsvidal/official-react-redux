@@ -1,5 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+/* REDUX. El Provider nos posibilita que el STORE este accesible desde cualquier componente 'hijo'. 
+   En nuestro caso, hemos envuelto el componente <App> con el Provider. Por lo tanto, <App> y cualquier 
+   componente hijo de <App> tendrá acceso al STORE */
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
@@ -11,7 +14,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={store}> {/* REDUX. Todos los componentes hijos de <App> tienen acceso al STORE */}
       <App />
     </Provider>
   </React.StrictMode>
