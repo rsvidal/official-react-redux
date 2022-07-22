@@ -1,7 +1,7 @@
 
 # RSV. Notes  
 This project has been created with the following sentence:  
-npx create-react-app my-app --template redux  
+*npx create-react-app my-app --template redux*  
 Tutorial: [https://react-redux.js.org/introduction/getting-started](https://react-redux.js.org/introduction/getting-started/)  
 
 # Getting Started with Create React App and Redux
